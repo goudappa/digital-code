@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Digital Code4U</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script src="https://unpkg.com/ionicons@4.4.8/dist/ionicons.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="cust-topnav">
+        <div class="container-fluid">
+            <div class="row cust-ulrow">
+                <ul class="cust-ul">
+                    <li>
+                        <!-- <div class="dropdown">
+                                    <button class="btn btn-secondary cust-dropbtn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-globe" aria-hidden="true"></i> United Arab Emirates
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">India</a>
+                                        <a class="dropdown-item" href="#">US</a>
+                                        <a class="dropdown-item" href="#">UK</a>
+                                    </div>
+                                </div> -->
+                        <button class="btn btn-secondary cust-dropbtn" type="button" data-toggle="modal" data-target="#choosecountrymodal">
+                            <i class="fa fa-globe" aria-hidden="true"></i> United Arab Emirates
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-secondary cust-dropbtn" type="button" data-toggle="modal" data-target="#chooselanguagemodal">
+                            <i class="fa fa-language" aria-hidden="true"></i> English
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Digital Code 4U</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p>Dummy Heading</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="#">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="#">Page 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="content">
+                <nav class="navbar cust-navbar navbar-expand-lg navbar-light bg-light" data-toggle="sticky-onscroll">
+                    <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info cust-btn">
+                            <i class="fas fa-align-left cusr-leftbtn"></i>
+                        </button>
+                        <span class="cust-logo">
+                            <a href="index.html">
+                                <img src="images/Logo.png" />
+                            </a>
+                        </span>
+                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-align-justify"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="mx-2 my-auto d-inline w-100">
+                                <div class="input-group cust-inpgrp">
+                                    <input type="text" class="form-control cust-srch border border-right-0" placeholder="What you are looking for ?">
+                                    <span class="input-group-append">
+                                        <button class="btn btn-outline-secondary cust-srchbtn border border-left-0" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                            <ul class="nav navbar-nav cust-navbarnav ml-auto">
+                                <li>
+                                    <!-- <div class="dropdown">
+                                                <button class="btn btn-secondary cust-dropbtn2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Shop now
+                                                </button>
+                                                <div class="dropdown-menu keep-open cust-dropmenu2" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">All Categories</a>
+                                                </div>
+                                            </div> -->
+                                    <div class="dropdown">
+                                        <button onclick="myFunction()" class="dropbtn">Shop Now
+                                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                        </button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a href="#">All Categories</a>
+                                            <button class="accordion">iTunes</button>
+                                            <div class="panel">
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                            </div>
+
+                                            <button class="accordion">Google Play</button>
+                                            <div class="panel">
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                            </div>
+
+                                            <button class="accordion">Skype</button>
+                                            <div class="panel">
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                            </div>
+
+                                            <a href="#">Betflix</a>
+                                            <a href="#">Mobile Recharge</a>
+
+                                            <button class="accordion">facebook</button>
+                                            <div class="panel">
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                            </div>
+
+                                            <a href="#">steam</a>
+
+                                            <div class="">
+                                                <p>
+                                                    <a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                        More Categories
+                                                    </a>
+                                                </p>
+                                                <div class="collapse" id="collapseExample2">
+                                                    <div class="card card-body">
+                                                        <button class="accordion">Google Play</button>
+                                                        <div class="panel">
+                                                            <p>Lorem ipsum dolor sit amet.</p>
+                                                        </div>
+
+                                                        <button class="accordion">Skype</button>
+                                                        <div class="panel">
+                                                            <p>Lorem ipsum dolor sit amet.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary cust-dropbtn2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Hello, Log In
+                                        </button>
+                                        <div class="dropdown-menu cust-dropmenu2" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">
+                                                <button type="button" class="btn btn-primary cust-primbtn" data-toggle="modal" data-target="#loginmodal">
+                                                    Log In
+                                                </button>
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <span style="color: gray;">Dont have account?</span> Sign Up</a>
+                                            <a class="dropdown-item" href="#">My Orders</a>
+                                            <a class="dropdown-item" href="#">Whishlist</a>
+                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#changepassmodal">Change Password</a>
+                                            <a class="dropdown-item" href="#">Account Settings</a>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="btn btn-secondary cust-dropbtn" type="button">
+                                        <a href="mycart.html" target="_blank">
+                                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Cart</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="">
+                    <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active text-center p-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="cust-bnr">
+                                            <h5>Hurry Up!</h5>
+                                            <h4>Lorem Ipsum is not only simply
+                                                <br /> 200 years old.</h4>
+                                            <p>Lorem Ipsum is not only simply 200 years old.
+                                                <br /> Lorem Ipsum is not only simply 200 years old.</p>
+                                            <button type="button" class="btn btn-primary cust-shopbtn">SHOP NOW
+                                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 cust-imgpad">
+                                        <div class="cust-brnimgs">
+                                            <img src="images/Card.png" />
+                                            <span>
+                                                <img src="images/Card-2.png" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item text-center p-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="cust-bnr">
+                                            <h5>Hurry Up!</h5>
+                                            <h4>Lorem Ipsum is not only simply
+                                                <br /> 200 years old.</h4>
+                                            <p>Lorem Ipsum is not only simply 200 years old.
+                                                <br /> Lorem Ipsum is not only simply 200 years old.</p>
+                                            <button type="button" class="btn btn-primary cust-shopbtn">SHOP NOW
+                                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 cust-imgpad">
+                                        <div class="cust-brnimgs">
+                                            <img src="images/Card.png" />
+                                            <span>
+                                                <img src="images/Card-2.png" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item text-center p-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="cust-bnr">
+                                            <h5>Hurry Up!</h5>
+                                            <h4>Lorem Ipsum is not only simply
+                                                <br /> 200 years old.</h4>
+                                            <p>Lorem Ipsum is not only simply 200 years old.
+                                                <br /> Lorem Ipsum is not only simply 200 years old.</p>
+                                            <button type="button" class="btn btn-primary cust-shopbtn">SHOP NOW
+                                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 cust-imgpad">
+                                        <div class="cust-brnimgs">
+                                            <img src="images/Card.png" />
+                                            <span>
+                                                <img src="images/Card-2.png" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a> -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselContent" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselContent" data-slide-to="1"></li>
+                            <li data-target="#carouselContent" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+
+</html>
